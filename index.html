@@ -2,39 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name=viewport content="width=750, user-scalable=0">
+	<meta name=viewport content="width=750,user-scalable=0">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/public_style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/public_style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/flex.css">
 </head>
 <body>
-	<div class="header">
-		<a href="index.html"><img src="img/pointer.png" alt=""></a><span>确认订单</span>
-	</div>
+	<header>
+		<div class='brand-logo'><div><img  src="stylesheets/logo.png" alt=""></div><div></div></div>
+		<div class='top-content'>
+			<span class='brand-words'>渝北店，8号桌</span>
+		</div>
+		<div class='non-content'></div>
+	</header>
 
-	<div class='body-content'>
-		<div class="single-part">
-			<div class="part-header">
-				<img src="img/single-header.png" alt=""><span>阿国是糖</span>
+	<div class='main-body'>
+		<nav class="left-navbars">
+		    <ul>
+		     <li><a href="#"><div><img src="stylesheets/main.png" alt=""></div><div>主菜</div></a></li>
+		     <li><a href="#"><div><img src="stylesheets/hot.png" alt=""></div><div>热菜</div></a></li>
+		     <li><a href="#"><div><img src="stylesheets/cold.png" alt=""></div><div>冷菜</div></a></li>
+		     <li><a href="#"><div><img src="stylesheets/soup.png" alt=""></div><div>汤品</div></a></li>
+		     <li><a href="#"><div><img src="stylesheets/dessert.png" alt=""></div><div>甜点</div></a></li>
+		    </ul>
+		</nav>
+		<div class='dish-content-body'>
+		    <div class="dish-header">主菜</div>
+			<div class="dish-item">
+				<img src='stylesheets/main-pic1.png' alt="">
+				<h3>三斤耗儿鱼</h3>
+				<div>
+					<div><span class='price'>¥238</span><span class='unit'>&nbsp;/&nbsp;锅</span></div>
+					<div><button class='reduce-btn'>-</button><span class='nums'>0</span><button class='add-btn'>+</button><span class='hidden'></span></div>
+				</div>
 			</div>
-			<div class="part-body">
-				<!-- <p class='dish-item'>
-					<span class='item-name'>蒙面耗儿鱼</span>
-					<span class='item-price'>¥238</span>
-					<span class='item-unit'>&nbsp;/&nbsp;锅</span>
-					<span class='button-btn'><button class='dish-reduce'>-</button><span class='item-nums'>1</span><button class='dish-plus'>+</button></span>
-				</p> -->
+			<div class="dish-item">
+				<img src='stylesheets/main-pic1.png' alt="">
+				<h3>三斤耗儿鱼</h3>
+				<div>
+					<div><span class='price'>¥238</span><span class='unit'>&nbsp;/&nbsp;锅</span></div>
+					<div><button class='reduce-btn'>-</button><span class='nums'>0</span><button class='add-btn'>+</button><span class='hidden'></span></div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class='info'>
-		<input type="text" name="" placeholder="备注：(选填)请输入您的口味、要求、忌口等">
-	</div>
-	<div class="footer">
-		<span>已点&nbsp;<span class='dinner-count'>0</span>&nbsp;道菜</span><span><a href="">传送厨房</a></span>
-	</div>
-	<script src="js/zepto.min.js"></script>
-	<script src="js/cart.js"></script>
+	<footer>
+		<div class='ordered-num'>
+			已点&nbsp;<span class='num'>0</span>&nbsp;道菜
+		</div>
+		<div class='ordered-list'>
+			已点菜单
+		</div>
+	</footer>
+<script src="javascripts/min.js"></script>
+<script src="javascripts/flex.js"></script>
 </body>
 </html>

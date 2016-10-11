@@ -1,0 +1,34 @@
+body,html,ol,ul,li,h1,h2,h3,h4,h5,h6,input,dl,dt,dd,p{
+	margin:0;
+	padding:0;
+}
+a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style:none;
+}
+img{
+	display:block;
+	border: 0;
+}
+.f_left{
+	float:left;
+}
+.f_right{
+	float:right;
+}
+.clear_both{
+	clear:both;
+}
+input,input:focus{
+	outline:none;
+}
+input[type=button]{
+	border:none;
+	outline:none;
+}
+dl,dt,dd{
+	color:black;
+}
